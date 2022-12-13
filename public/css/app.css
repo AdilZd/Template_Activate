@@ -97,6 +97,55 @@ footer {
     width: 250vw;
   }
 }
+@media only screen and (max-width: 768px) {
+  header {
+    width: 120vw;
+  }
+  header button {
+    flex-direction: column;
+    display: flex;
+    margin: auto;
+  }
+  #divsec1 {
+    width: 120vw;
+  }
+  #divsec2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 120vw;
+    margin-left: 20%;
+  }
+  #divsec2 #img-pc {
+    display: block;
+    text-align: center;
+  }
+  #divsec3 {
+    width: 120vw;
+  }
+  #section4 {
+    display: block;
+    text-align: center;
+    width: 120vw;
+  }
+  #section5 {
+    display: block;
+    text-align: center;
+    width: 120vw;
+    flex-direction: column;
+  }
+  #section5 div {
+    margin-bottom: 50px;
+  }
+  #section6 {
+    display: block;
+    text-align: center;
+    width: 120vw;
+  }
+  footer {
+    width: 120vw;
+  }
+}
 /*!
  * Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)

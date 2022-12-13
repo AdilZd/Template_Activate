@@ -1,0 +1,51 @@
+
+@media only screen and (max-width: 768px)  {
+    header {
+        width: 120vw;
+        button {
+            flex-direction: column;
+            display: flex;
+            margin: auto;
+        }
+        }
+
+        #divsec1 {
+            width: 120vw;
+        }
+        #divsec2 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 120vw;
+            margin-left: 20%;
+            #img-pc {
+                display: block;
+                text-align: center;
+            }
+        }
+        #divsec3 {
+            width: 120vw;
+        }
+        #section4 {
+            display: block;
+            text-align: center;
+            width: 120vw;
+        }
+        #section5 {
+            display: block;
+            text-align: center;
+            width: 120vw;
+            flex-direction: column;
+            div {
+                margin-bottom: 50px;
+            }
+        }
+        #section6 {
+            display: block;
+            text-align: center;
+            width: 120vw;
+        }
+        footer {
+            width: 120vw;
+        }
+    }
