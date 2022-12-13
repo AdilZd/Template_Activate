@@ -1,0 +1,35 @@
+/* header */
+
+header {
+    background-image: url(../../../public/img/bg-header-desktop.png);
+    background-repeat: no-repeat;
+    height: 600px;
+}
+
+div:nth-child(2) {
+    font-size: 30px;
+}
+
+div:nth-child(3) {
+    color: #b8bcbd;
+}
+
+button:nth-child(1) {
+    color: white;
+    background-color: #5dccbb;
+    border-radius: 30px;
+    padding: 10px;
+    font-size: 12px;
+}
+
+button:nth-child(2) {
+    color: white;
+    background-color: #8896ff;
+    border-radius: 30px;
+    padding: 10px;
+    font-size: 12px;
+}
+
+#head div {
+    margin-bottom: 2%;
+}
