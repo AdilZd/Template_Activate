@@ -4,6 +4,7 @@ header {
   background-image: url(../../../public/img/bg-header-desktop.png);
   background-repeat: no-repeat;
   height: 600px;
+  width: 100vw;
 }
 
 div:nth-child(2) {
@@ -44,6 +45,58 @@ button:nth-child(2) {
   font-size: 30px;
 }
 
+footer {
+  padding: 20px;
+}
+
+@media only screen and (max-width: 375px) {
+  header {
+    width: 250vw;
+  }
+  header button {
+    flex-direction: column;
+    display: flex;
+    margin: auto;
+  }
+  #divsec1 {
+    width: 250vw;
+  }
+  #divsec2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 250vw;
+  }
+  #divsec2 #img-pc {
+    display: block;
+    text-align: center;
+  }
+  #divsec3 {
+    width: 250vw;
+  }
+  #section4 {
+    display: block;
+    text-align: center;
+    width: 250vw;
+  }
+  #section5 {
+    display: block;
+    text-align: center;
+    width: 250vw;
+    flex-direction: column;
+  }
+  #section5 div {
+    margin-bottom: 50px;
+  }
+  #section6 {
+    display: block;
+    text-align: center;
+    width: 250vw;
+  }
+  footer {
+    width: 250vw;
+  }
+}
 /*!
  * Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
@@ -10514,6 +10567,8 @@ readers do not read off random characters that represent icons */
   --bs-orange: rgb(207, 130, 22);
   --bs-rose: #df46c8;
   --bs-grisaille: #b8bcbd;
+  --bs-grisaille2: #f5f6f8;
+  --bs-grisaille3: #8c9093;
   --bs-primary-rgb: 13, 110, 253;
   --bs-secondary-rgb: 108, 117, 125;
   --bs-success-rgb: 25, 135, 84;
@@ -10525,6 +10580,8 @@ readers do not read off random characters that represent icons */
   --bs-orange-rgb: 207, 130, 22;
   --bs-rose-rgb: 223, 70, 200;
   --bs-grisaille-rgb: 184, 188, 189;
+  --bs-grisaille2-rgb: 245, 246, 248;
+  --bs-grisaille3-rgb: 140, 144, 147;
   --bs-white-rgb: 255, 255, 255;
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 33, 37, 41;
@@ -13562,6 +13619,40 @@ textarea.form-control-lg {
   --bs-btn-disabled-border-color: #b8bcbd;
 }
 
+.btn-grisaille2 {
+  --bs-btn-color: #000;
+  --bs-btn-bg: #f5f6f8;
+  --bs-btn-border-color: #f5f6f8;
+  --bs-btn-hover-color: #000;
+  --bs-btn-hover-bg: #f7f7f9;
+  --bs-btn-hover-border-color: #f6f7f9;
+  --bs-btn-focus-shadow-rgb: 208, 209, 211;
+  --bs-btn-active-color: #000;
+  --bs-btn-active-bg: #f7f8f9;
+  --bs-btn-active-border-color: #f6f7f9;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #000;
+  --bs-btn-disabled-bg: #f5f6f8;
+  --bs-btn-disabled-border-color: #f5f6f8;
+}
+
+.btn-grisaille3 {
+  --bs-btn-color: #000;
+  --bs-btn-bg: #8c9093;
+  --bs-btn-border-color: #8c9093;
+  --bs-btn-hover-color: #000;
+  --bs-btn-hover-bg: #9da1a3;
+  --bs-btn-hover-border-color: #989b9e;
+  --bs-btn-focus-shadow-rgb: 119, 122, 125;
+  --bs-btn-active-color: #000;
+  --bs-btn-active-bg: #a3a6a9;
+  --bs-btn-active-border-color: #989b9e;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #000;
+  --bs-btn-disabled-bg: #8c9093;
+  --bs-btn-disabled-border-color: #8c9093;
+}
+
 .btn-outline-primary {
   --bs-btn-color: #0d6efd;
   --bs-btn-border-color: #0d6efd;
@@ -13746,6 +13837,40 @@ textarea.form-control-lg {
   --bs-btn-disabled-color: #b8bcbd;
   --bs-btn-disabled-bg: transparent;
   --bs-btn-disabled-border-color: #b8bcbd;
+  --bs-gradient: none;
+}
+
+.btn-outline-grisaille2 {
+  --bs-btn-color: #f5f6f8;
+  --bs-btn-border-color: #f5f6f8;
+  --bs-btn-hover-color: #000;
+  --bs-btn-hover-bg: #f5f6f8;
+  --bs-btn-hover-border-color: #f5f6f8;
+  --bs-btn-focus-shadow-rgb: 245, 246, 248;
+  --bs-btn-active-color: #000;
+  --bs-btn-active-bg: #f5f6f8;
+  --bs-btn-active-border-color: #f5f6f8;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #f5f6f8;
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: #f5f6f8;
+  --bs-gradient: none;
+}
+
+.btn-outline-grisaille3 {
+  --bs-btn-color: #8c9093;
+  --bs-btn-border-color: #8c9093;
+  --bs-btn-hover-color: #000;
+  --bs-btn-hover-bg: #8c9093;
+  --bs-btn-hover-border-color: #8c9093;
+  --bs-btn-focus-shadow-rgb: 140, 144, 147;
+  --bs-btn-active-color: #000;
+  --bs-btn-active-bg: #8c9093;
+  --bs-btn-active-border-color: #8c9093;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #8c9093;
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: #8c9093;
   --bs-gradient: none;
 }
 
@@ -15388,6 +15513,24 @@ textarea.form-control-lg {
   color: #3b3c3d;
 }
 
+.alert-grisaille2 {
+  --bs-alert-color: #626263;
+  --bs-alert-bg: #fdfdfe;
+  --bs-alert-border-color: #fcfcfd;
+}
+.alert-grisaille2 .alert-link {
+  color: #4e4e4f;
+}
+
+.alert-grisaille3 {
+  --bs-alert-color: #545658;
+  --bs-alert-bg: #e8e9e9;
+  --bs-alert-border-color: #dddedf;
+}
+.alert-grisaille3 .alert-link {
+  color: #434546;
+}
+
 @-webkit-keyframes progress-bar-stripes {
   0% {
     background-position-x: 1rem;
@@ -15840,6 +15983,34 @@ textarea.form-control-lg {
   color: #fff;
   background-color: #4a4b4c;
   border-color: #4a4b4c;
+}
+
+.list-group-item-grisaille2 {
+  color: #626263;
+  background-color: #fdfdfe;
+}
+.list-group-item-grisaille2.list-group-item-action:hover, .list-group-item-grisaille2.list-group-item-action:focus {
+  color: #626263;
+  background-color: #e4e4e5;
+}
+.list-group-item-grisaille2.list-group-item-action.active {
+  color: #fff;
+  background-color: #626263;
+  border-color: #626263;
+}
+
+.list-group-item-grisaille3 {
+  color: #545658;
+  background-color: #e8e9e9;
+}
+.list-group-item-grisaille3.list-group-item-action:hover, .list-group-item-grisaille3.list-group-item-action:focus {
+  color: #545658;
+  background-color: #d1d2d2;
+}
+.list-group-item-grisaille3.list-group-item-action.active {
+  color: #fff;
+  background-color: #545658;
+  border-color: #545658;
 }
 
 .btn-close {
@@ -17454,6 +17625,16 @@ textarea.form-control-lg {
   background-color: RGBA(184, 188, 189, var(--bs-bg-opacity, 1)) !important;
 }
 
+.text-bg-grisaille2 {
+  color: #000 !important;
+  background-color: RGBA(245, 246, 248, var(--bs-bg-opacity, 1)) !important;
+}
+
+.text-bg-grisaille3 {
+  color: #000 !important;
+  background-color: RGBA(140, 144, 147, var(--bs-bg-opacity, 1)) !important;
+}
+
 .link-primary {
   color: #0d6efd !important;
 }
@@ -17529,6 +17710,20 @@ textarea.form-control-lg {
 }
 .link-grisaille:hover, .link-grisaille:focus {
   color: #c6c9ca !important;
+}
+
+.link-grisaille2 {
+  color: #f5f6f8 !important;
+}
+.link-grisaille2:hover, .link-grisaille2:focus {
+  color: #f7f8f9 !important;
+}
+
+.link-grisaille3 {
+  color: #8c9093 !important;
+}
+.link-grisaille3:hover, .link-grisaille3:focus {
+  color: #a3a6a9 !important;
 }
 
 .ratio {
@@ -18018,6 +18213,16 @@ textarea.form-control-lg {
 .border-grisaille {
   --bs-border-opacity: 1;
   border-color: rgba(var(--bs-grisaille-rgb), var(--bs-border-opacity)) !important;
+}
+
+.border-grisaille2 {
+  --bs-border-opacity: 1;
+  border-color: rgba(var(--bs-grisaille2-rgb), var(--bs-border-opacity)) !important;
+}
+
+.border-grisaille3 {
+  --bs-border-opacity: 1;
+  border-color: rgba(var(--bs-grisaille3-rgb), var(--bs-border-opacity)) !important;
 }
 
 .border-white {
@@ -18897,6 +19102,16 @@ textarea.form-control-lg {
   color: rgba(var(--bs-grisaille-rgb), var(--bs-text-opacity)) !important;
 }
 
+.text-grisaille2 {
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-grisaille2-rgb), var(--bs-text-opacity)) !important;
+}
+
+.text-grisaille3 {
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-grisaille3-rgb), var(--bs-text-opacity)) !important;
+}
+
 .text-black {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-black-rgb), var(--bs-text-opacity)) !important;
@@ -19001,6 +19216,16 @@ textarea.form-control-lg {
 .bg-grisaille {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-grisaille-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.bg-grisaille2 {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-grisaille2-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.bg-grisaille3 {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-grisaille3-rgb), var(--bs-bg-opacity)) !important;
 }
 
 .bg-black {

@@ -20,6 +20,8 @@ $couleur-perso : (
     "orange" : rgb(207, 130, 22),
     "rose"   : #df46c8,
     "grisaille" : #b8bcbd,
+    "grisaille2" : #f5f6f8,
+    "grisaille3" : #8c9093,
 );
 
 $theme-colors : map-merge($theme-colors , $couleur-perso);
